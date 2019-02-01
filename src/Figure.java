@@ -10,4 +10,9 @@ public abstract class Figure implements Geometry {
             return 0;
         }
     }
+
+    void printInformation() {
+        this.print();
+        System.out.println("Flaeche: " + this.calcArea() + "\nUmfang: " + this.calcCircumference() + "\n");
+    }
 }
